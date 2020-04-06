@@ -46,13 +46,13 @@ variable "config" {
     slo_description = string
     service_name    = string
     feature_name    = string
-    #exporters       = "list"
-    exporters = list(object({
-      class      = string
-      project_id = string
-      dataset_id = string
-      table_id = string
-    }))
+    exporters       = "list"
+    #exporters = list(object({
+    #  class      = string
+    #  project_id = string
+    #  dataset_id = string
+    #  table_id = string
+    #}))
     # wait on https://github.com/hashicorp/terraform/issues/22449 to be merged
     # type = list(object({
     #   class = string
