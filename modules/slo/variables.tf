@@ -52,7 +52,7 @@ variable "config" {
       project_id  = string
       dataset_id  = string
       table_id    = string
-      topic_id    = string
+      topic_name    = string
     }))
     # wait on https://github.com/hashicorp/terraform/issues/22449 to be merged
     # type = list(object({
