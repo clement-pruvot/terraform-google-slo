@@ -48,10 +48,11 @@ variable "config" {
     feature_name    = string
     #exporters       = "list"
     exporters = list(object({
-      class      = string
-      project_id = string
-      dataset_id = string
-      table_id = string
+      class       = string
+      project_id  = string
+      dataset_id  = string
+      table_id    = string
+      topic_id    = string
     }))
     # wait on https://github.com/hashicorp/terraform/issues/22449 to be merged
     # type = list(object({
